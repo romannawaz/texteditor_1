@@ -1,0 +1,218 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px 100px;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active,
+select:focus {
+    outline: 0;
+}
+
+td {
+    text-align: center;
+}
+
+.block {
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    width: 950px;
+    min-height: 250px;
+
+    background-color: #eaeef0;
+
+    border-radius: 5px;
+    border: 2px solid #dde2e3;
+}
+
+.btn {
+    padding: 10px 15px;
+
+    border-radius: 3px;
+    border: none;
+}
+
+/* Settings-button Block */
+.settings {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5px auto;
+
+    width: 120px;
+}
+
+.settings__edit-button {
+    color: #784f0c;
+
+    background-color: #ffbd00;
+}
+
+.settings__style-button {
+    color: #fff;
+
+    background-color: #0897bd;
+}
+
+/* Edit-field */
+.edit-field {
+    resize: none;
+
+    width: 100%;
+    height: 180px;
+
+    border-radius: 5px;
+    border: 2px solid #dde2e3;
+}
+
+/* Edit block */
+
+.add-element-button,
+.save-changes-button {
+    margin-top: 15px;
+
+    color: #fff;
+}
+
+.add-element-button {
+    background-color: red;
+}
+
+.save-changes-button {
+    background-color: green;
+}
+
+
+/* Style block */
+
+.style {
+    position: relative;
+}
+
+.style__block:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.style__heading {
+    margin-bottom: 5px;
+}
+
+.style__settings-font-size {
+    display: flex;
+}
+
+.style__settings-font-size label {
+    display: flex;
+    align-items: center;
+}
+
+.style__settings-font-size label:not(:last-child) {
+    margin-right: 5px;
+}
+
+.text-color-button,
+.background-color-button {
+    color: #fff;
+
+    background-color: #6b757c;
+}
+
+.grid-of-colors {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 210px;
+    height: 210px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.grid-of-colors__item {
+    width: 70px;
+
+    border: 1px solid #000;
+}
+
+/* Add */
+
+.create-element h3 {
+    margin: 25px 0 5px;
+}
+
+.create-element__list-of-elements {
+    margin: 10px 0 15px;
+}
+
+.create-element__param {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.create-element__param>input,
+.create-element__param>select {
+    width: 85%;
+
+    padding: 10px 15px;
+
+    border: 1px solid #dde2e3;
+    border-radius: 5px;
+}
+
+.create-element__param-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-element__param-size-small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 33%;
+}
+
+.create-element__param-size-small:not(:first-child) {
+    margin-left: 45px;
+}
+
+.create-element__param-size-small>input,
+.create-element__param-size-small>select {
+    width: 50%;
+
+    padding: 10px 15px;
+
+    border: 1px solid #dde2e3;
+    border-radius: 5px;
+}
+
+.create-element__button-element-table,
+.create-element__button-element-list {
+    margin-top: 20px;
+    padding: 15px 20px;
+
+    color: #fff;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: green;
+}
+
+.none {
+    display: none;
+}

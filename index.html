@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 8 Practice 1</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <div class="main-block">
+        <div class="block content">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="settings">
+            <button type="button" class="btn settings__edit-button">edit</button>
+            <button type="button" class="btn settings__style-button">style</button>
+        </div>
+
+        <div class="block settings-block">
+            <div class="edit none">
+                <textarea class="edit-field"></textarea>
+
+                <button type="button" class="btn add-element-button">add</button>
+                <button type="button" class="btn save-changes-button">save</button>
+            </div>
+
+            <div class="style none">
+                <div class="style__block font-size-block">
+                    <h2 class="style__heading">Font Size</h2>
+
+                    <div class="style__settings style__settings-font-size">
+                        <label><input type="radio" name="fontSize" value="12px">12px</label>
+                        <label><input type="radio" name="fontSize" value="14px">14px</label>
+                        <label><input type="radio" name="fontSize" value="16px" checked>16px</label>
+                        <label><input type="radio" name="fontSize" value="18px">18px</label>
+                        <label><input type="radio" name="fontSize" value="20px">20px</label>
+                    </div>
+                </div>
+
+                <div class="style__block font-family-block">
+                    <h2 class="style__heading">Font Family</h2>
+
+                    <select class="style__settings-font-family">
+                        <option value="serif">Serif</option>
+                        <option value="sans-serif">Sans-Serif</option>
+                        <option value="monospace">Monospace</option>
+                    </select>
+                </div>
+
+                <div class="style__block change-color-block">
+                    <h2 class="style__heading">Colors</h2>
+
+                    <button type="button" class="btn text-color-button">Color of Text</button>
+                    <button type="button" class="btn background-color-button">Color of Background</button>
+
+                    <div class="grid-of-colors none">
+                        <div class="grid-of-colors__item" style="background-color: #e84743;"></div>
+                        <div class="grid-of-colors__item" style="background-color: #0078ff;"></div>
+                        <div class="grid-of-colors__item" style="background-color: #1f9642;"></div>
+                        <div class="grid-of-colors__item" style="background-color: #323b3f;"></div>
+                        <div class="grid-of-colors__item" style="background-color: #ffbd00;"></div>
+                        <div class="grid-of-colors__item" style="background-color: #f4548b;"></div>
+                        <div class="grid-of-colors__item" style="background-color: #ffffff;"></div>
+                        <div class="grid-of-colors__item" style="background-color: #704fc4;"></div>
+                        <div class="grid-of-colors__item" style="background-color: #0a97bb;"></div>
+                    </div>
+                </div>
+
+                <div class="style__block font-style-block">
+                    <h2 class="style__heading">Style</h2>
+
+                    <label for="set-bold" class="set-style">
+                        <input type="checkbox" id="set-bold" value="bold" data-style="fontWeight">
+                        <span>Bold</span>
+                    </label>
+
+                    <label for="set-italic" class="set-style">
+                        <input type="checkbox" id="set-italic" value="italic" data-style="fontStyle">
+                        <span>Cursive</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="add-block none">
+        <div class="block create-element">
+            <h2>Choose what you want</h2>
+
+            <form class="create-element__list-of-elements">
+                <label for="element-table">
+                    <input type="radio" value="table" name="element" id="element-table">
+                    Table
+                </label>
+                <label for="element-list">
+                    <input type="radio" value="list" name="element" id="element-list">
+                    List
+                </label>
+            </form>
+
+            <form class="create-element-table none">
+                <div class="create-element__settings">
+                    <div class="create-element__param">
+                        <label for="count-tr">Count TR:</label>
+                        <input type="text" id="count-tr" placeholder="Count TR">
+                    </div>
+                    <div class="create-element__param">
+                        <label for="count-td">Count TD:</label>
+                        <input type="text" id="count-td" placeholder="Count TD">
+                    </div>
+                </div>
+
+                <h3>Add style to your table</h3>
+
+                <div class="create-element__styles">
+                    <div class="create-element__param">
+                        <label for="width-of-td">Width of TD</label>
+                        <input type="text" id="width-of-td" placeholder="Width of TD">
+                    </div>
+                    <div class="create-element__param">
+                        <label for="height-of-td">Height of TD</label>
+                        <input type="text" id="height-of-td" placeholder="Height of TD">
+                    </div>
+                    <div class="create-element__param-group">
+                        <div class="create-element__param-size-small">
+                            <label for="width-of-border">Width of Border</label>
+                            <input type="text" id="width-of-border" placeholder="Width of Border">
+                        </div>
+                        <div class="create-element__param-size-small">
+                            <label for="type-of-border">Type of Border</label>
+                            <select id="type-of-border">
+                                <option value="solid">Solid</option>
+                                <option value="dashed">Dashed</option>
+                                <option value="dotted">Dotted</option>
+                                <option value="double">Double</option>
+                                <option value="groove" >Groove</option>
+                                <option value="ridge">Ridge</option>
+                                <option value="inset">Inset</option>
+                                <option value="outset">Outset</option>
+                            </select>
+                        </div>
+                        <div class="create-element__param-size-small">
+                            <label for="color-of-border">Color of Border</label>
+                            <select id="color-of-border">
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="create-element__button-element-table">Create Table</button>
+            </form>
+
+            <form class="create-element-list none">
+                <div class="create-element__styles">
+                    <div class="create-element__param">
+                        <label for="count-li">Count Li</label>
+                        <input type="text" id="count-li" placeholder="Count Li">
+                    </div>
+                </div>
+                <div class="create-element__styles">
+                    <div class="create-element__param">
+                        <label for="type-of-list">Type of List</label>
+
+                        <select id="type-of-list">
+                            <option value="circle">Circle</option>
+                            <option value="disc">Disc</option>
+                            <option value="square">Square</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" class="create-element__button-element-list">Create List</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
